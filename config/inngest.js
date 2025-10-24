@@ -8,7 +8,7 @@ export const inngest = new Inngest({ id: "quickcart-next" });
 // Sync user creation
 export const syncUserCreation = inngest.createFunction(
   {
-    id: "sync-user-from-clerk",
+    id: "syncuserfromclerk",
     event: "clerk/user.created"
   },
   async ({ event }) => {
@@ -27,7 +27,7 @@ export const syncUserCreation = inngest.createFunction(
 // Sync user update
 export const syncUserUpdate = inngest.createFunction(
   {
-    id: "update-user-from-clerk",
+    id: "updateuserfromclerk",
     event: "clerk/user.updated"
   },
   async ({ event }) => {
@@ -46,7 +46,7 @@ export const syncUserUpdate = inngest.createFunction(
 // Sync user deletion
 export const syncUserDeletion = inngest.createFunction(
   {
-    id: "delete-user-from-clerk",
+    id: "deleteuserfromclerk",
     event: "clerk/user.deleted"
   },
   async ({ event }) => {
